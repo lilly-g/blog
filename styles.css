@@ -263,7 +263,7 @@ p {
 
 .book img {
   float: left;
-  width: 200px;
+  width: 12em;
   margin-right: 1.3em;
   margin-bottom: 0.3em;
   border: 2px solid #000;
