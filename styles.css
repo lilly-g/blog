@@ -230,3 +230,14 @@ box-shadow: none;
   height: 200px;
   padding-right: 10px;
 }
+
+.piece img {
+  width: 200px;
+  border: 2px solid #000000;
+  image-rendering: pixelated;
+  margin-bottom: 0.5em;
+}
+
+.piece h1 {
+  font-size: medium;
+}
