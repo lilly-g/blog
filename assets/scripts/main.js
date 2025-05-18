@@ -1,14 +1,18 @@
-const options = [
-  "Content for home",
-  "Diary entries go here",
-  "Books list or info",
-  "Movies info",
-  "Links list"
-];
+const pages = ["home", "diary", "books", "artgallery", "links"];
 
 function setContent(index) {
-  document.querySelector(".ie-content.scroll").innerHTML = options[index];
+  const page = pages[index];
+
+  fetch(`${page}.html`)
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("ie-content").innerHTML = html;
+    })
+    .catch(err => {
+      document.getElementById("ie-content").innerHTML = "<p>Error loading content.</p>";
+      console.error(err);
+    });
 }
 
-//load home page on startup
+// Load home page on startup
 setContent(0);
