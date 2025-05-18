@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="leftColumn">
+            <img src="assets/images/fan.jpg" alt="fan" id="img">
+
+            <div class="menu">
+                <button onclick="setContent(0)">home</button>
+                <button onclick="setContent(1)">diary</button>
+                <button onclick="setContent(2)">books</button>
+                <button onclick="setContent(3)">movies</button>
+                <button onclick="setContent(4)">links</button>
+            </div>
+        </div>
+
+        <div class="ie-window">
+            <div class="ie-titlebar">
+                <span class="ie-title">organic tangerine</span>
+                <button class="ie-close">×</button>
+            </div>
+            <div class="ie-content">
+                <div class="ie-content scroll"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
