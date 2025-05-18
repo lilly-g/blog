@@ -4,13 +4,14 @@
 body {
   /*background img*/
   background-image: url('assets/images/hearts.jpg');
-  background-repeat: repeat;                /* tile the image */
-  background-size: auto;                    /* or use 'cover' or 'contain' */
-  background-size: 130px auto; 
-  background-attachment: fixed;             /* makes it stay in place when scrolling */
-
   min-height: 100vh;        /* full viewport height */
   margin: 0;
+  background-repeat: repeat;                /* tile the image */
+  background-size: auto;                    /* or use 'cover' or 'contain' */
+  background-size: 130px auto;
+  background-attachment: fixed;             /* makes it stay in place when scrolling */
+
+  
 }
 
 #main-content {
@@ -292,13 +293,25 @@ p {
 }
 
 /*ART GALLERY*/
+.gallery {
+  display: flex;
+  height: 100%;
+}
+
+.piece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .piece img {
-  width: 200px;
+  height: 75%;
   border: 2px solid #000000;
   image-rendering: pixelated;
-  margin-bottom: 0.5em;
+  margin: 1em;
 }
 
 .piece h1 {
   font-size: medium;
+  margin-top: 0;
 }
