@@ -231,6 +231,45 @@ box-shadow: none;
   padding-right: 10px;
 }
 
+/*BOOKS*/
+.book {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.book img {
+  float: left;
+  width: 200px;
+  margin-right: 1.5em;
+  margin-bottom: 0.5em;
+  border: 2px solid #000;
+  image-rendering: pixelated;
+}
+
+.book-text {
+  flex: 1;
+}
+
+.book h1 {
+  font-size: 1.5em;
+  margin: 0 0 0.5em;
+}
+
+.book h2 {
+  font-size: 1em;
+  font-style: italic;
+  color: #444;
+  margin: 0 0 1em;
+}
+
+.book p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/*ART GALLERY*/
 .piece img {
   width: 200px;
   border: 2px solid #000000;
