@@ -1,10 +1,10 @@
-const pages = ["home", "diary", "books", "artgallery", "links"];
+const pages = ["home", "projects", "photos", "artgallery", "links"];
 const titles = [
-  "new tab",
-  "today, and yesterday, and the day before",
-  "word consumption and regurgitation",
-  "creations of the mind and hand",
-  "blue text with a similarly described underline"
+  "hello world",
+  "digital creations",
+  "ventures",
+  "art",
+  "blue text"
 ];
 
 function setContent(index) {
